@@ -59,3 +59,6 @@
 # OSX
 */.DS_Store
 .DS_Store
+
+# Godot 4+ specific ignores
+**/.godot/
