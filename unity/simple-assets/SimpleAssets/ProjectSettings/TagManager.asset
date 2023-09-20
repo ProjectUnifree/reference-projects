@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background5
+    uniqueID: 714446473
+    locked: 0
+  - name: Background4
+    uniqueID: 4259275513
+    locked: 0
+  - name: Background3
+    uniqueID: 286819077
+    locked: 0
+  - name: Background2
+    uniqueID: 2210891145
+    locked: 0
+  - name: Background1
+    uniqueID: 1930655485
+    locked: 0
+  - name: Trees
+    uniqueID: 2627449363
+    locked: 0
+  - name: Foreground
+    uniqueID: 1641286477
+    locked: 0
