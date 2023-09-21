@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://d04fl3y0awgn1"]
+[gd_scene load_steps=2 format=3 uid="uid://d04fl3y0awgn1"]
+
+[ext_resource type="PackedScene" uid="uid://ba08p47ibg3da" path="res://assets/models/Farm.fbx" id="1_xyfme"]
 
 [node name="Node3D" type="Node3D"]
+
+[node name="Directional Light" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.6951, -0.65386, 0.298836, 0.298836, 0.640856, 0.707107, -0.65386, -0.402207, 0.640856, 2.08165e-12, 2, -3)
+
+[node name="Farm" parent="." instance=ExtResource("1_xyfme")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="Main Camera" type="Camera3D" parent="."]
+transform = Transform3D(-1, -2.99003e-08, 8.21505e-08, 3.27752e-16, 0.939693, 0.34202, -8.74228e-08, 0.34202, -0.939693, 2.08165e-12, 1.4, -2.5)
+fov = 60.0
+near = 0.03
+far = 1000.0
