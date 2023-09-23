@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://cfytcof4pl7d0"]
+
+[ext_resource type="Texture2D" uid="uid://geqali6bck24" path="res://assets/resources/images/sprites/TileGround1.tres" id="1_guy0u"]
+[ext_resource type="Texture2D" uid="uid://b0ocw8bnb73u3" path="res://assets/resources/images/sprites/TileGround2.tres" id="2_t75fb"]
+[ext_resource type="Texture2D" uid="uid://v2totwp7t3yn" path="res://assets/resources/images/sprites/TileGround3.tres" id="3_hwo4j"]
+[ext_resource type="Texture2D" uid="uid://d0pmwvwogo72g" path="res://assets/resources/images/sprites/TileGround4.tres" id="4_tknx4"]
+[ext_resource type="Texture2D" uid="uid://cjkv2wfd273vu" path="res://assets/resources/images/sprites/TileGround5.tres" id="5_7rmtg"]
+[ext_resource type="Texture2D" uid="uid://cnjvdo6xxp51q" path="res://assets/resources/images/sprites/TileGround6.tres" id="6_g3aow"]
+[ext_resource type="Texture2D" uid="uid://cwby25nkmi5ql" path="res://assets/resources/images/sprites/TileGround7.tres" id="7_r1ayq"]
+[ext_resource type="Texture2D" uid="uid://crdc1w4ade6fi" path="res://assets/resources/images/sprites/TileGround8.tres" id="8_v1fye"]
+[ext_resource type="Texture2D" uid="uid://db8le635ib0bx" path="res://assets/resources/images/sprites/TileGround9.tres" id="9_ay2qw"]
+
+[node name="background_medium" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_guy0u")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(16, 2.08165e-12)
+texture = ExtResource("2_t75fb")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 2.08165e-12)
+texture = ExtResource("2_t75fb")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(48, 2.08165e-12)
+texture = ExtResource("3_hwo4j")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 16)
+texture = ExtResource("4_tknx4")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(16, 16)
+texture = ExtResource("5_7rmtg")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 16)
+texture = ExtResource("5_7rmtg")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(48, 16)
+texture = ExtResource("6_g3aow")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 32)
+texture = ExtResource("7_r1ayq")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(16, 32)
+texture = ExtResource("8_v1fye")
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 32)
+texture = ExtResource("8_v1fye")
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(48, 32)
+texture = ExtResource("9_ay2qw")

@@ -1,0 +1,6 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://25f76e4394e8cbb5"]
+
+[ext_resource type="Texture2D" uid="uid://4f702febb78c24df" path="res://assets/resources/images/Sprites.png" id="1_iebuk"]
+[resource]
+atlas = ExtResource("1_iebuk")
+region = Rect2(32, 288, 16, 16)
