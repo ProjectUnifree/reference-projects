@@ -800,7 +800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413949342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 3.79, z: 9.958747}
+  m_LocalPosition: {x: 8.53, y: 3.46, z: 9.958747}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -990,7 +990,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 2
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -1791,7 +1791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478543114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.78, y: 3.04, z: 9.958747}
+  m_LocalPosition: {x: 14.84, y: 2.96, z: 9.958747}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2313,7 +2313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566435450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.71, y: 3.39, z: 9.958747}
+  m_LocalPosition: {x: -1.61, y: 3.39, z: 9.958747}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3090,7 +3090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071825354475746682, guid: b08c38bcb71dd46218713d233da54ea5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.84
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2071825354475746682, guid: b08c38bcb71dd46218713d233da54ea5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3154,7 +3154,7 @@ GameObject:
   - component: {fileID: 2130351331}
   - component: {fileID: 2130351332}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Scarecrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
