@@ -1,3 +1,249 @@
-[gd_scene format=3 uid="uid://dtsa7mr5lipav"]
+[gd_scene load_steps=15 format=3 uid="uid://dtsa7mr5lipav"]
+
+[ext_resource type="PackedScene" uid="uid://cfytcof4pl7d0" path="res://assets/prefabs/background_medium.tscn" id="1_n2fvj"]
+[ext_resource type="Texture2D" uid="uid://bkbq4ulalpfxd" path="res://assets/resources/images/sprites/Background1.tres" id="2_q4ndu"]
+[ext_resource type="Texture2D" uid="uid://8k5xr28vng6s" path="res://assets/resources/images/sprites/Well.tres" id="2_tk1ic"]
+[ext_resource type="Texture2D" uid="uid://dhlcwbira6o62" path="res://assets/resources/images/sprites/Background2.tres" id="3_8blwl"]
+[ext_resource type="Texture2D" uid="uid://l4hxa22hut0e" path="res://assets/resources/images/sprites/Scarecrow.tres" id="3_aehky"]
+[ext_resource type="Texture2D" uid="uid://ck2xo45mgrad2" path="res://assets/resources/images/sprites/Background3.tres" id="4_14i4r"]
+[ext_resource type="Texture2D" uid="uid://ubowa0kecdqg" path="res://assets/resources/images/sprites/Box1.tres" id="4_jhj5u"]
+[ext_resource type="Texture2D" uid="uid://bwgdx1ofs21cg" path="res://assets/resources/images/sprites/Background4.tres" id="5_5jk2p"]
+[ext_resource type="Texture2D" uid="uid://dupbxwxx23s3a" path="res://assets/resources/images/sprites/Box2.tres" id="5_p1bhr"]
+[ext_resource type="Texture2D" uid="uid://dtxrt4oxi0cpm" path="res://assets/resources/images/sprites/Background5.tres" id="6_7w17i"]
+[ext_resource type="Texture2D" uid="uid://2ji0074yr36p" path="res://assets/resources/images/sprites/Tree2.tres" id="6_pi2nb"]
+[ext_resource type="Texture2D" uid="uid://dwkm47luxkoff" path="res://assets/resources/images/sprites/Tree1.tres" id="7_xl5op"]
+[ext_resource type="Texture2D" uid="uid://vn8vgj0djd0v" path="res://assets/resources/images/sprites/Tree4.tres" id="8_jndy4"]
+[ext_resource type="PackedScene" uid="uid://cp73cg0dcgwew" path="res://assets/prefabs/2d_prefab_png.tscn" id="9_rplfw"]
 
 [node name="2d-scene-with-prefab" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(2.08165e-12, 2.08165e-12)
+zoom = Vector2(1.5, 1.5)
+
+[node name="Level" type="Node2D" parent="."]
+
+[node name="Ground" type="Node2D" parent="Level"]
+
+[node name="background_medium" parent="Level/Ground" instance=ExtResource("1_n2fvj")]
+position = Vector2(-513, 144)
+scale = Vector2(2, 2)
+
+[node name="background_medium2" parent="Level/Ground" instance=ExtResource("1_n2fvj")]
+position = Vector2(-386, 144)
+scale = Vector2(2, 2)
+
+[node name="background_medium3" parent="Level/Ground" instance=ExtResource("1_n2fvj")]
+position = Vector2(-259, 145)
+scale = Vector2(2, 2)
+
+[node name="background_medium4" parent="Level/Ground" instance=ExtResource("1_n2fvj")]
+position = Vector2(-132, 146)
+scale = Vector2(2, 2)
+
+[node name="background_medium5" parent="Level/Ground" instance=ExtResource("1_n2fvj")]
+position = Vector2(-4, 146)
+scale = Vector2(2, 2)
+
+[node name="background_medium6" parent="Level/Ground" instance=ExtResource("1_n2fvj")]
+position = Vector2(122, 146)
+scale = Vector2(2, 2)
+
+[node name="background_medium7" parent="Level/Ground" instance=ExtResource("1_n2fvj")]
+position = Vector2(250, 146)
+scale = Vector2(2, 2)
+
+[node name="background_medium8" parent="Level/Ground" instance=ExtResource("1_n2fvj")]
+position = Vector2(378, 145)
+scale = Vector2(2, 2)
+
+[node name="Well" type="Sprite2D" parent="Level"]
+z_index = 1
+texture_filter = 1
+position = Vector2(-50, 83)
+scale = Vector2(2, 2)
+texture = ExtResource("2_tk1ic")
+
+[node name="Scarecrow" type="Sprite2D" parent="Level"]
+z_index = 1
+texture_filter = 1
+position = Vector2(55, 84)
+scale = Vector2(2, 2)
+texture = ExtResource("3_aehky")
+
+[node name="Box1" type="Sprite2D" parent="Level"]
+texture_filter = 1
+position = Vector2(98, 100)
+scale = Vector2(2, 2)
+texture = ExtResource("4_jhj5u")
+
+[node name="Box2" type="Sprite2D" parent="Level"]
+texture_filter = 1
+position = Vector2(147, 99)
+scale = Vector2(2, 2)
+texture = ExtResource("5_p1bhr")
+
+[node name="Trees" type="Node2D" parent="Level"]
+
+[node name="Tree1" type="Sprite2D" parent="Level/Trees"]
+texture_filter = 1
+position = Vector2(-334, 37)
+scale = Vector2(2, 2)
+texture = ExtResource("6_pi2nb")
+
+[node name="Tree2" type="Sprite2D" parent="Level/Trees"]
+texture_filter = 1
+position = Vector2(-151, 53)
+scale = Vector2(2, 2)
+texture = ExtResource("7_xl5op")
+
+[node name="Tree3" type="Sprite2D" parent="Level/Trees"]
+texture_filter = 1
+position = Vector2(12, 37)
+scale = Vector2(2, 2)
+texture = ExtResource("8_jndy4")
+
+[node name="2DPrefab-PNG" parent="Level/Trees" instance=ExtResource("9_rplfw")]
+texture_filter = 1
+position = Vector2(238, 50)
+scale = Vector2(2, 2)
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Background1-1" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(-479, 123)
+scale = Vector2(2, 2)
+texture = ExtResource("2_q4ndu")
+
+[node name="Background1-2" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(-234, 121)
+scale = Vector2(2, 2)
+texture = ExtResource("2_q4ndu")
+
+[node name="Background1-3" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(17, 122)
+scale = Vector2(2, 2)
+texture = ExtResource("2_q4ndu")
+
+[node name="Background1-4" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(255, 121)
+scale = Vector2(2, 2)
+texture = ExtResource("2_q4ndu")
+
+[node name="Background1-5" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(497, 123)
+scale = Vector2(2, 2)
+texture = ExtResource("2_q4ndu")
+
+[node name="Background2-1" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(-482, 41)
+scale = Vector2(2, 2)
+texture = ExtResource("3_8blwl")
+
+[node name="Background2-2" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(-237, 39)
+scale = Vector2(2, 2)
+texture = ExtResource("3_8blwl")
+
+[node name="Background2-3" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(14, 40)
+scale = Vector2(2, 2)
+texture = ExtResource("3_8blwl")
+
+[node name="Background2-4" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(252, 39)
+scale = Vector2(2, 2)
+texture = ExtResource("3_8blwl")
+
+[node name="Background2-5" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(494, 41)
+scale = Vector2(2, 2)
+texture = ExtResource("3_8blwl")
+
+[node name="Background3-1" type="Sprite2D" parent="Background"]
+z_index = -3
+position = Vector2(-482, -62)
+scale = Vector2(2, 2)
+texture = ExtResource("4_14i4r")
+
+[node name="Background3-2" type="Sprite2D" parent="Background"]
+z_index = -3
+position = Vector2(-237, -64)
+scale = Vector2(2, 2)
+texture = ExtResource("4_14i4r")
+
+[node name="Background3-3" type="Sprite2D" parent="Background"]
+z_index = -3
+position = Vector2(14, -63)
+scale = Vector2(2, 2)
+texture = ExtResource("4_14i4r")
+
+[node name="Background3-4" type="Sprite2D" parent="Background"]
+z_index = -3
+position = Vector2(252, -64)
+scale = Vector2(2, 2)
+texture = ExtResource("4_14i4r")
+
+[node name="Background3-5" type="Sprite2D" parent="Background"]
+z_index = -3
+position = Vector2(494, -62)
+scale = Vector2(2, 2)
+texture = ExtResource("4_14i4r")
+
+[node name="Background4-1" type="Sprite2D" parent="Background"]
+z_index = -4
+position = Vector2(-126, -75)
+scale = Vector2(2, 2)
+texture = ExtResource("5_5jk2p")
+
+[node name="Background4-2" type="Sprite2D" parent="Background"]
+z_index = -4
+position = Vector2(-376, -75)
+scale = Vector2(2, 2)
+texture = ExtResource("5_5jk2p")
+
+[node name="Background4-3" type="Sprite2D" parent="Background"]
+z_index = -4
+position = Vector2(365, -55)
+scale = Vector2(2, 2)
+texture = ExtResource("5_5jk2p")
+
+[node name="Background5-1" type="Sprite2D" parent="Background"]
+z_index = -5
+position = Vector2(-486, -143)
+scale = Vector2(2, 2)
+texture = ExtResource("6_7w17i")
+
+[node name="Background5-2" type="Sprite2D" parent="Background"]
+z_index = -5
+position = Vector2(-241, -145)
+scale = Vector2(2, 2)
+texture = ExtResource("6_7w17i")
+
+[node name="Background5-3" type="Sprite2D" parent="Background"]
+z_index = -5
+position = Vector2(10, -144)
+scale = Vector2(2, 2)
+texture = ExtResource("6_7w17i")
+
+[node name="Background5-4" type="Sprite2D" parent="Background"]
+z_index = -5
+position = Vector2(248, -145)
+scale = Vector2(2, 2)
+texture = ExtResource("6_7w17i")
+
+[node name="Background5-5" type="Sprite2D" parent="Background"]
+z_index = -5
+position = Vector2(490, -143)
+scale = Vector2(2, 2)
+texture = ExtResource("6_7w17i")
